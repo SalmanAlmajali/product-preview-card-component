@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.container { 
+    background: hsl(30, 38%, 92%);
+    padding: 15px;
+}
+
+.card {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.product-image img{
+    width: 345px;
+    object-fit: contain;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: auto;
+}
+
+.desktop-image {
+    display: none;
+}
+
+.mobile-image {
+    display: block;
+}
+
+.product-desc {
+    padding: 30px;
+    background: hsl(0, 0%, 100%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 320px;
+}
+
+.category {
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    font-size: 0.8em;
+    letter-spacing: 5px;
+    color:hsl(228, 12%, 48%);
+}
+
+.title {
+    font-family: 'Fraunces';
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    font-size: 0.9rem;
+    line-height: 28px;
+}
+
+.price {
+    display: flex;
+    align-items: center;
+}
+
+.price h1 {
+    font-family: 'Fraunces';
+    color: hsl(158, 36%, 37%);
+    text-align: left;
+    margin-right: 20px;
+}
+
+.price p {
+    font-family: 'Montserrat';
+    color:hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+.add-to-chart{
+    padding: 15px;
+    outline: none;
+    border: none;
+    background: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    font-family: 'Montserrat';
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.add-to-chart:hover {
+    background: hsl(158, 36%, 27%);
+}
+
+@media screen and (min-width: 1440px) {
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 93.5vh;
+    }
+    
+    .card {
+        flex-direction: row;
+        width: 47%;
+    }
+    
+    .product-image img{
+        border-top-right-radius: 0;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    
+    .desktop-image {
+        display: block;
+    }
+    
+    .mobile-image {
+        display: none;
+    }
+    
+    .product-desc {
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 0;
+        justify-content: space-around;
+        position: relative;
+        height: 458px;
+    }    
+}
