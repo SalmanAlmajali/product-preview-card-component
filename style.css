@@ -6,6 +6,7 @@
 .container { 
     background: hsl(30, 38%, 92%);
     padding: 15px;
+    height: 100vh;
 }
 
 .card {
@@ -100,7 +101,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 93.5vh;
+        height:100vh;
     }
     
     .card {
