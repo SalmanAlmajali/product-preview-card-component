@@ -6,7 +6,7 @@
 .container { 
     background: hsl(30, 38%, 92%);
     padding: 15px;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .card {
@@ -16,7 +16,7 @@
 }
 
 .product-image img{
-    width: 345px;
+    max-width: 100%;
     object-fit: contain;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
@@ -37,9 +37,10 @@
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     flex-direction: column;
-    height: 320px;
+    height: 350px;
+    max-width: 100%;
 }
 
 .category {
@@ -60,6 +61,7 @@
     font-family: 'Montserrat';
     font-size: 0.9rem;
     line-height: 28px;
+    max-width: 500px;
 }
 
 .price {
@@ -90,13 +92,14 @@
     font-family: 'Montserrat';
     border-radius: 8px;
     cursor: pointer;
+    max-width: 500px;
 }
 
 .add-to-chart:hover {
     background: hsl(158, 36%, 27%);
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 700px) {
     .container {
         display: flex;
         align-items: center;
@@ -110,9 +113,11 @@
     }
     
     .product-image img{
+        max-width: none;
         border-top-right-radius: 0;
         border-top-left-radius: 15px;
         border-bottom-left-radius: 15px;
+        width: 345px;
     }
     
     .desktop-image {
